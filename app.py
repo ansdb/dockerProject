@@ -1,12 +1,9 @@
-# import click
+import click
 
-# @click.command()
+@click.command()
 
-# def hello():
-#     click.echo('Hello World!')
+def hello():
+    click.echo('Hello World!')
     
-# if __name__ == '__main__':
-#     hello()
-
-# Test code
-print('JS')
+if __name__ == '__main__':
+    hello()

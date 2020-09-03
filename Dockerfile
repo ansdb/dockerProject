@@ -9,7 +9,7 @@ WORKDIR /app
 COPY . app.py /app/
 
 # Instal packages from requirements.txt
-# hadolint ignore=D3013
+# hadolint ignore=DL3013
 
-RUN pip3 install --upgrade pip &&\
-    pip3 install --trusted-host pypi.python.org -r requirements.txt
+RUN pip install --upgrade pip==20.2.2 &&\
+    pip install --trusted-host pypi.python.org -r requirements.txt
